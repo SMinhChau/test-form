@@ -20,7 +20,7 @@ jobs:
   deploy:
     environment:
       name: test 
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://github.com/SMinhChau/test-form
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
