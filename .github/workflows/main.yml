@@ -20,7 +20,7 @@ jobs:
   deploy:
     environment:
       name: test 
-      url: https://github.com/SMinhChau/test-form
+      url: ${{ steps.deploy_to_pages.outputs.github_pages_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
